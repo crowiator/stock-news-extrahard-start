@@ -84,8 +84,8 @@ def send_message(articles, diff):
         difference += f"🔻{diff} %"
     else:
         difference += f"🔺{diff} %"
-    account_sid = 'AC7ceb3d818413b972266d045cb9fe8bcf'
-    auth_token = '7593d6254b4b22566e69ce0908148706'
+    account_sid = '[INSERT_SID]'
+    auth_token = '[INSERT_TOKEN]'
     client = Client(account_sid, auth_token)
     for ar in articles:
         body = f"\n{difference}\n Headline: {ar[0]}\n Brief: {ar[1]}"
